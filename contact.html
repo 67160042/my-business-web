@@ -1,0 +1,50 @@
+<!-- 1.มี Contact Form สําหรับป้อนข้อมูล เช่น ชื่อ, อีเมล, ข้อความติดต่อเป็นต้น
+2.ที่อยู่ของบริษัท
+3.แผนที่ (embed Google Maps ถ้าได้)-->
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheepop</title>
+  </head>
+  <body>
+    <!--logo-->
+    <header>
+      <h1>Sheepop</h1>
+      <img src="images/logo.jpg" style="width: 300px" alt="logo ร้าน Sheepop" />
+    </header>
+    <main>
+      <!--4.1 มี Contact Form สําหรับป้อนข้อมูล -->
+
+      <form action="/register" method="POST">
+        <fieldset>
+          <legend>เพศ:</legend>
+          <label for="male">ชาย</label>
+          <input type="radio" id="male" name="male" />
+          <label for="female">หญิง</label>
+          <input type="radio" id="female" name="female" />
+          <label for="others">อื่น ๆ</label>
+          <input type="radio" id="others" name="others" />
+        </fieldset>
+
+        <fieldset>
+          <legend>ข้อมูลเพิ่มเติม:</legend>
+          <textarea
+            id="more"
+            name="more"
+            placeholder="กรอกข้อมูลที่นี่"
+            rows="5"
+            cols="40"
+          ></textarea>
+        </fieldset>
+
+        <input type="checkbox" id="agree" name="agree" />
+        <label for="agree">ยอมรับ</label>
+
+        <button type="submit">ส่งข้อมูล</button>
+        <button type="reset">ยกเลิก</button>
+      </form>
+    </main>
+  </body>
+</html>
