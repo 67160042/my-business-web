@@ -1,0 +1,242 @@
+/*1) RESET & พื้นฐาน*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 2) HEADER + NAVIGATION */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 3px solid #ff9f1c;
+
+  display: flex;
+  flex-direction: column; /* เรียงบน–ล่าง */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+  text-align: center;
+}
+
+header h1 {
+  color: #ff9f1c;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9f1c;
+}
+
+/*3) HERO SECTION (หน้าแรก) */
+#Hero {
+  background-color: #ff9f1c;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#Hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+/* 4) FEATURED SERVICES (Flexbox)*/
+#FeaturedServices {
+  padding: 40px 20px;
+}
+
+.service-container {
+  display: flex; /* Flexbox */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.services {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.services:hover {
+  background-color: #fff3e0; /* hover effect */
+}
+
+/*5) TEAM (Grid)*/
+#Team {
+  padding: 40px 20px;
+  display: grid; /* Grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+figure {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/*6) SERVICES PAGE*/
+.service {
+  background-color: white;
+  margin: 15px 20px;
+  padding: 20px;
+  border-left: 5px solid #ff9f1c;
+}
+
+/*7) TABLE*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff9f1c;
+  color: white;
+}
+/* 8)CONTACT FORM */
+form {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff9f1c;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #ff9f1c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #e68a00;
+}
+/* จัดกลุ่ม radio เพศ */
+input[type="radio"] {
+  margin-right: 6px;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+/* ถ้า label เพศอยู่บรรทัดเดียวกับ radio */
+label input[type="radio"] {
+  margin-right: 10px;
+}
+
+/*9) FOOTER*/
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ff9f1c;
+}
+/*10) MISSION & VISION*/
+/* หัวข้อใหญ่ อยู่นอกกรอบ */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0b0600;
+  margin: 30px 20px 10px;
+}
+/* กรอบของ วิสัยทัศน์ และ พันธกิจ */
+#MissionVision,
+#mission {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 20px;
+
+  border: 2px solid #ff9f1c; /* กรอบ */
+  border-radius: 10px; /* มุมโค้ง */
+}
+/* หัวข้อย่อยในกรอบ */
+#MissionVision h3,
+#mission h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+/*11) /* ทำให้รูปทีมขนาดเท่ากัน*/
+#Team figure img {
+  width: 100%;
+  height: 320px; /* บรรทัดสำคัญที่สุด */
+  object-fit: cover; /* ครอบรูป ไม่ยืด */
+}
