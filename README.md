@@ -23,7 +23,6 @@
 - รีเซ็ต margin, padding, box-sizing
 - กำหนดฟอนต์ สีพื้นหลัง และ line-height ของ body
 - กำหนดให้รูปภาพไม่ล้น container (max-width: 100%)
-
 - 2. Header และ Navigation (ใช้ Flexbox)
 - จัด header เป็นแนวตั้ง (flex-direction: column)
 - จัดเนื้อหาให้อยู่กึ่งกลาง
@@ -75,19 +74,19 @@
 
 ### 1. หน้าแรก
 
-![Home Page](ScreenShots/index.png)
+![Home Page](ScreenShots/index01.png)
 
 ### 2. หน้าเกี่ยวกับเรา
 
-![About Page](ScreenShots/about.png)
+![About Page](ScreenShots/about01.png)
 
 ### 3. หน้าบริการ
 
-![Services Page](ScreenShots/services.png)
+![Services Page](ScreenShots/services01.png)
 
 ### 4. หน้าติดต่อเรา
 
-![Contact Page](ScreenShots/contact.png)
+![Contact Page](ScreenShots/contact01.png)
 
 ## ผู้จัดทำ
 

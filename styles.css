@@ -195,7 +195,7 @@ input[type="radio"] + label {
 
 /* ถ้า label เพศอยู่บรรทัดเดียวกับ radio */
 label input[type="radio"] {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 /*9) FOOTER*/
